@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+/* background: #fed136; */
+
+body {
+  /* background-color: yellow; */
+  margin: 0px;
+ padding: 0px;
+ font-family: 'Raleway', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+ul li {
+  margin:0 20px;
+  color: whitesmoke;
+}
+
+header  {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: transparent;
+
+}
+
+header * {
+  margin: 2%;
+}
+
+header button {
+  background: #fed136;
+  padding: 10px;
+  border-radius: 25%;
+  color: white;
+  border: none;
+  display: none;
+}
+
+header div {
+  color: #fed136;
+}
+
+section {
+  background-image: url('http://thewowstyle.com/wp-content/uploads/2019/01/Men%E2%80%99s-Fashion.png');
+  height: 100vh;
+  width: 100vw;
+  background-attachment: scroll;
+  /* backdrop-filter: sepia(90%); */
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.hero {
+  color: whitesmoke;
+  text-align: center;
+
+}
+
+.hero * {
+  margin: 5%;
+}
+
+.hero h1 {
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 700;
+}
+.hero button {
+  background: #fed136;
+  padding: 10px;
+  border-radius: 5%;
+  color: white;
+  border: none;
+  font-size: 36px;
+}
+
+.services {
+  text-align: center;
+}
+
+.item {
+  text-align: center;
+  margin: 10px 25px;
+}
+
+.item p {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+}
+
+.serviceHolder {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.circle {
+  color: white;
+  background-color: #fed136;
+  padding: 40px;
+  border-radius: 100%;
+}
+
+.portHolder {
+  text-align: center;
+}
+
+
+table {
+  width: 85%;
+  margin: auto;
+  border-spacing: 20px;
+}
+
+td {
+  background-color: whitesmoke;
+  text-align: center;
+  padding: 20px;
+
+}
+
+
+
+td img {
+  width: 85%;
+
+}
+
+@media (max-width: 990px) {
+  ul {
+    display: none;
+  }
+  header {
+    background-color: #212529;
+  }
+  header button {
+    display: block;
+  }
+}
+
+@media (max-width: 775px) {
+  .serviceHolder {
+    display: block;
+  }
+  .serviceHolder p {
+    width: 80%;
+    margin: 40px auto;
+    
+  }
+}
+
+@media (max-width: 900px) {
+  table {
+    width: 66%;
+    margin: auto;
+    border-spacing: 10px;
+  }
+}
