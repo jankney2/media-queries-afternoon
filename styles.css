@@ -31,6 +31,7 @@ header  {
   width: 100%;
   background: none;
   z-index: 1;
+  height: 75px;
 }
 
 header * {
@@ -165,7 +166,8 @@ footer {
   width: 100%;
   background: #212529;
   z-index: 1;
-  transition: 2s ease-in-out;
+  transition: 1s ease-in-out;
+  height: 45px;
 }
 
 
