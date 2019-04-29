@@ -26,8 +26,11 @@ header  {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: transparent;
-
+  position: fixed;
+  top:0;
+  width: 100%;
+  background: none;
+  z-index: 1;
 }
 
 header * {
@@ -51,21 +54,32 @@ section {
   background-image: url('http://thewowstyle.com/wp-content/uploads/2019/01/Men%E2%80%99s-Fashion.png');
   height: 100vh;
   width: 100vw;
-  background-attachment: scroll;
-  /* backdrop-filter: sepia(90%); */
+  /* background-attachment: scroll; */
   background-repeat: no-repeat;
   background-size: cover;
+  /* backdrop-filter: sepia(90%); */
 
 }
 
 .hero {
+
   color: whitesmoke;
   text-align: center;
+  position: absolute;
+  top: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
 
 }
 
 .hero * {
   margin: 5%;
+
+}
+
+.hero h3 {
+  padding-top: 10%;
 }
 
 .hero h1 {
@@ -133,6 +147,27 @@ td img {
   width: 85%;
 
 }
+
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.socialLinks i {
+  padding: 15px;
+}
+
+.navBack {
+  position: fixed;
+  top:0;
+  width: 100%;
+  background: #212529;
+  z-index: 1;
+  transition: 2s ease-in-out;
+}
+
 
 @media (max-width: 990px) {
   ul {
